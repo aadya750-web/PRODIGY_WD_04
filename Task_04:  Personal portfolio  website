@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    /* === Global Styles === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f7fa;
+    }
+    header {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #444;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #222;
+      text-align: center;
+      font-size: 2rem;
+    }
+    /* === Home Section === */
+    .home {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+    .home img {
+      max-width: 300px;
+      border-radius: 50%;
+      margin: 20px;
+    }
+    .home-content {
+      flex: 1;
+      padding: 20px;
+    }
+    .home-content h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+    .home-content p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+    /* === About Section === */
+    .about p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+    /* === Skills Section === */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .skill {
+      background: #4facfe;
+      color: white;
+      padding: 15px 25px;
+      margin: 10px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: transform 0.3s;
+    }
+    .skill:hover {
+      transform: scale(1.1);
+    }
+    /* === Projects Section === */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project h3 {
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+    /* === Footer === */
+    footer {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    footer a {
+      color: #00f2fe;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>👨‍💻 John Doe</h1>
+    <p>Web Developer | Frontend & Backend Specialist</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <h1>Hello, I'm John 👋</h1>
+      <p>I’m a passionate web developer who loves creating modern, user-friendly websites and applications. My mission is to design interactive and visually appealing solutions that deliver value and impact.</p>
+    </div>
+    <img src="https://via.placeholder.com/300" alt="Profile Photo">
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a dedicated web developer with a background in Computer Science. I hold a Bachelor's degree in Information Technology and have 3+ years of professional experience building dynamic web applications.</p>
+    <p>My expertise includes front-end technologies such as HTML, CSS, JavaScript, and React, as well as backend frameworks like Node.js and Express. I also have experience working with databases such as MySQL and MongoDB.</p>
+    <p>I enjoy solving complex problems, learning new technologies, and sharing knowledge with others. My goal is to grow as a full-stack developer and contribute to innovative projects.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Express</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Git/GitHub</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <h3>🌦 Weather App</h3>
+        <p>A responsive weather application using OpenWeather API that shows live weather updates based on user location.</p>
+      </div>
+      <div class="project">
+        <h3>⏱ Stopwatch</h3>
+        <p>A stopwatch app built with HTML, CSS, and JavaScript, supporting start, pause, reset, and lap functionality.</p>
+      </div>
+      <div class="project">
+        <h3>🎮 Tic-Tac-Toe</h3>
+        <p>A fun Tic-Tac-Toe game with 2-player and AI opponent modes, built using pure JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:johndoe@email.com">johndoe@email.com</a></p>
+    <p>🔗 LinkedIn: <a href="#">linkedin.com/in/johndoe</a></p>
+    <p>💻 GitHub: <a href="#">github.com/johndoe</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 John Doe | Designed with ❤️ using HTML, CSS & JavaScript</p>
+  </footer>
+</body>
+</html>
